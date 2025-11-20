@@ -29,7 +29,7 @@
     .testimonials{margin-top:26px}
     .testimonials .item{background:rgba(255,255,255,0.02);padding:14px;border-radius:10px;margin-bottom:12px}
     footer{margin-top:26px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between}
-    @media(max-width:900px){.hero{grid-template-columns:1fr;}.logo img{height:46px}.speaker img{width:64px;height:64px}}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;}.logo img{height:46px}.speaker img{width:64px;height:64px}.btn{width:100%;display:block;text-align:center}.actions{flex-direction:column}.container{padding:18px}.pill{display:none}.card{padding:14px}#numbersRain{opacity:0.6}}.logo img{height:46px}.speaker img{width:64px;height:64px}}
   .btn{background:var(--accent);color:#04212a;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700;transition:all .35s ease;transform:translateY(0);box-shadow:0 4px 10px rgba(0,0,0,0.2)} .btn:hover{transform:translateY(-4px) scale(1.03);box-shadow:0 10px 20px rgba(0,0,0,0.35)} .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.08);color:#fff}
 
 /* Large golden CTA button */
@@ -50,19 +50,18 @@
   <canvas id="numbersRain" aria-hidden="true"></canvas>
   <div class="container">
     <header>
-      <div class="logo">
+      <div class="logo" style="align-items:center">
         <img src="logo.png" alt="Kasturi Divine logo" />
-        <div>
+        <div style="margin-left:12px">
           <div style="font-size:13px;color:var(--muted)">LIVE FREE WEBINAR</div>
-          <div class="pill">3 DAYS Master Class on Vedic Numerology</div>
+          <!-- Move big CTA next to logo (left) and remove duplicate button on right -->
+          <div style="margin-top:6px">
+            <a class="btn cta" href="https://chat.whatsapp.com/JyjgJl72hxcDaTGvMe0Ax1" target="_blank">3 DAYS Master Class on Vedic Numerology — Join Free</a>
+          </div>
         </div>
       </div>
       <div style="text-align:right">
         <div style="font-weight:700">Dates: <span style="color:var(--accent)">1, 2, 3 December</span></div>
-        <div style="margin-top:12px">
-          <!-- Large golden animated CTA button -->
-          <a class="btn cta" href="https://chat.whatsapp.com/JyjgJl72hxcDaTGvMe0Ax1" target="_blank">3 DAYS Master Class on Vedic Numerology — Join Free</a>
-        </div>
       </div>
     </header>
 
@@ -111,9 +110,9 @@
       <!-- Right: media / speakers -->
       <aside>
         <div class="card video-wrap">
-         <div class="card video-wrap">
-<div style="font-size:14px;color:var(--muted)">Watch Preview</div>
-<iframe width="100%" height="260" src="https://www.youtube.com/embed/fbeljqCwkYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div style="font-size:14px;color:var(--muted)">Watch Preview</div>
+          <iframe width="100%" height="260" src="https://www.youtube.com/embed/fbeljqCwkYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
           <div style="margin-top:12px;font-weight:700">Speakers</div>
           <div class="speakers">
             <div class="speaker">
@@ -160,8 +159,3 @@
 </script>
 </body>
 </html>
-
-
-
-
-
