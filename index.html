@@ -1,182 +1,319 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="509C_G3V2t6DuGr0wkgKZ5ii52U93DiRnsOiod9NrPI" />
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>LIVE FREE WEBINAR — 3 DAYS Master Class on Vedic Numerology | Kasturi Divine</title>
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2344859982600754');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2344859982600754&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <title>3 DAYS Master Class on Vedic Numerology — Kasturi Divine</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
-    :root{--accent:#F6B02D;--bg:#08192a;--card:#0f2430;--muted:#bcd0d9}
-    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071426 0%, #0b2a36 100%);color:#fff}
-    .container{max-width:1100px;margin:36px auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between}
-    .logo{display:flex;gap:12px;align-items:center}
-    .logo img{height:56px}
-    .pill{background:var(--accent);color:#04212a;padding:8px 12px;border-radius:999px;font-weight:700}
-    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:22px}
-    .card{background:rgba(255,255,255,0.03);padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(1,12,20,0.6)}
-    h1{font-size:32px;margin:0 0 8px}
+    :root{--accent:#F6B02D;--bg:#071426;--muted:#bcd0d9}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter, 'Montserrat', sans-serif;background:linear-gradient(180deg,#071426 0%, #0b2a36 100%);color:#fff;overflow-x:hidden}
+
+    /* BACKGROUND NUMBERS */
+    #numbersRain{position:fixed;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:1}
+
+    .container{max-width:1100px;margin:auto;padding:22px;position:relative;z-index:2}
+
+    /* HEADER */
+    header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;margin-bottom:20px}
+    .logo img{height:120px;border-radius:10px}
+    .pill{background:var(--accent);color:#04212a;padding:10px 14px;border-radius:999px;font-weight:800;font-family:Montserrat}
+
+    /* CINEMATIC CTA */
+    .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;border-radius:12px;margin-top:10px;cursor:pointer}
+    .btn.cta{background:linear-gradient(90deg,#f6b02d,#ffc857);color:#04212a;padding:18px 28px;font-size:20px;position:relative;overflow:hidden;box-shadow:0 0 30px rgba(246,176,45,0.25)}
+    .btn.cta::before{content:'';position:absolute;top:0;left:-40%;height:100%;width:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.35),transparent);transform:skewX(-20deg);animation:lightSweep 3s infinite linear}
+    .btn.cta::after{content:'';position:absolute;inset:0;box-shadow:0 0 30px rgba(246,176,45,0.35);border-radius:12px;animation:glow 2.5s infinite ease-in-out}
+
+    @keyframes lightSweep{0%{left:-50%;}40%{left:120%;}100%{left:120%;}}
+    @keyframes glow{0%{opacity:0.5;transform:scale(0.97)}50%{opacity:1;transform:scale(1.03)}100%{opacity:0.5;transform:scale(0.97)}}
+
+    .btn.secondary{padding:12px 18px;border:1px solid rgba(255,255,255,0.12);color:#fff;background:transparent}
+
+    /* JOIN WA button special */
+    #joinWABtn{background:var(--accent);color:#04212a;padding:12px 16px;border-radius:10px;font-weight:800;position:relative;display:inline-block;text-decoration:none}
+    #joinWABtn{animation:blinkWA 1.4s infinite ease-in-out}
+    #joinWABtn:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 0 25px rgba(246,176,45,0.6)}
+    #joinWABtn::after{content:"👉";position:absolute;right:-42px;top:50%;transform:translateY(-50%);font-size:24px;animation:handPoint 1.2s infinite ease-in-out}
+    @keyframes blinkWA{0%{opacity:1}50%{opacity:0.55}100%{opacity:1}}
+    @keyframes handPoint{0%{transform:translateY(-50%) translateX(0)}50%{transform:translateY(-50%) translateX(6px)}100%{transform:translateY(-50%) translateX(0)}}
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:26px;margin-top:30px}
+    .card{background:rgba(255,255,255,0.03);border-radius:12px;padding:22px;backdrop-filter:blur(4px);box-shadow:0 6px 20px rgba(0,0,0,0.4)}
+    h1{font-family:Montserrat;font-size:40px;font-weight:800;line-height:1.1;margin-bottom:10px}
     .sub{color:var(--muted);margin-bottom:12px}
-    .date-badges{display:flex;gap:8px;margin:14px 0}
-    .badge{background:rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px}
-    ul.learn{padding-left:18px;margin:8px 0 0}
-    .video-wrap{display:flex;flex-direction:column;gap:12px}
-    video{width:100%;border-radius:10px;background:#000}
-    .speakers{display:flex;gap:12px;align-items:center;margin-top:8px}
-    .speaker img{width:84px;height:84px;object-fit:cover;border-radius:10px;border:3px solid rgba(255,255,255,0.06)}
-    .actions{display:flex;gap:10px;margin-top:12px}
-    .btn{background:var(--accent);color:#04212a;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700;transition:all .35s ease;transform:translateY(0);box-shadow:0 4px 10px rgba(0,0,0,0.2)} .btn:hover{transform:translateY(-4px) scale(1.03);box-shadow:0 10px 20px rgba(0,0,0,0.35)} .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.08);color:#fff}
-    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.08);color:#fff}
-    .testimonials{margin-top:26px}
-    .testimonials .item{background:rgba(255,255,255,0.02);padding:14px;border-radius:10px;margin-bottom:12px}
-    footer{margin-top:26px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between}
-    @media(max-width:900px){.hero{grid-template-columns:1fr;}.logo img{height:46px}.speaker img{width:64px;height:64px}.btn{width:100%;display:block;text-align:center}.actions{flex-direction:column}.container{padding:18px}.pill{display:none}.card{padding:14px}#numbersRain{opacity:0.6}}.logo img{height:46px}.speaker img{width:64px;height:64px}}
-  .btn{background:var(--accent);color:#04212a;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700;transition:all .35s ease;transform:translateY(0);box-shadow:0 4px 10px rgba(0,0,0,0.2)} .btn:hover{transform:translateY(-4px) scale(1.03);box-shadow:0 10px 20px rgba(0,0,0,0.35)} .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.08);color:#fff}
+    ul.learn{margin:10px 0 0 20px;line-height:1.6}
 
-/* Large golden CTA button */
-.btn.cta{background:linear-gradient(90deg,#f6b02d,#ffc857);color:#082127;padding:16px 22px;border-radius:14px;font-size:18px;box-shadow:0 8px 30px rgba(246,176,45,0.25);border:2px solid rgba(255,255,255,0.06)}
-.btn.cta:hover{transform:translateY(-6px) scale(1.04);box-shadow:0 18px 40px rgba(246,176,45,0.35)}
+    .badge{background:rgba(255,255,255,0.08);padding:8px 12px;border-radius:8px;margin:4px 6px 4px 0;display:inline-block}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
 
-/* Fullscreen canvas for falling numbers effect */
-#numbersRain{position:fixed;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.9}
-/* ensure page content sits above the canvas */
-.container{position:relative;z-index:2}
+    .testimonials .item{background:rgba(255,255,255,0.05);padding:14px;border-radius:10px;margin-bottom:10px}
 
-/* make cards slightly translucent so numbers show through */
-.card{background:rgba(255,255,255,0.03);backdrop-filter:blur(4px)}
+    footer{margin-top:20px;color:var(--muted);display:flex;justify-content:space-between;font-size:14px}
 
-</style>
+    /* Responsive */
+    @media(max-width:980px){.hero{grid-template-columns:1fr 340px}.logo img{height:100px}h1{font-size:34px}}
+    @media(max-width:700px){.hero{grid-template-columns:1fr}.logo img{height:86px}h1{font-size:28px}.btn.cta{font-size:16px;padding:14px 18px}#joinWABtn{right:-34px}}
+
+    .highlight{color:var(--accent);font-weight:900}
+    .lead-paragraph{color:var(--muted);margin-top:6px}
+  </style>
 </head>
 <body>
-  <canvas id="numbersRain" aria-hidden="true"></canvas>
-  <div class="container">
-    <header>
-      <div class="logo" style="align-items:center">
-        <img src="logo.png" alt="Kasturi Divine logo" />
-        <div style="margin-left:12px">
-          <div style="font-size:13px;color:var(--muted)">LIVE FREE WEBINAR</div>
-          <!-- Move big CTA next to logo (left) and remove duplicate button on right -->
-          <div style="margin-top:6px">
-            <a class="btn cta" href="https://chat.whatsapp.com/JyjgJl72hxcDaTGvMe0Ax1" target="_blank">3 DAYS Master Class on Vedic Numerology — Join Free</a>
-          </div>
+
+<canvas id="numbersRain"></canvas>
+
+<div class="container">
+  <header>
+    <div class="logo">
+      <img src="/mnt/data/vsdc-screenshot 2025-11-25 20-53-00-028.jpeg" alt="Kasturi Divine logo" />
+    </div>
+
+    <div style="text-align:right">
+      <div class="pill">LIVE FREE WEBINAR</div>
+      <a href="https://chat.whatsapp.com/JyjgJl72hxcDaTGvMe0Ax1" target="_blank" class="btn cta">
+        3 DAYS Master Class on <span class="highlight">Vedic Numerology</span> — Join Free
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <div class="card">
+        <h1>3 Days Master Class on <span class="highlight">Vedic Numerology</span></h1>
+        <div class="sub">Practical Vedic Numerology — calculations, remedies & live case studies</div>
+        <p class="lead-paragraph">What you'll gain: concise calculation skills, name correction techniques, dasha/dosh checks for quick decision-making, and remedies you can apply right away.</p>
+
+        <ul class="learn">
+          <li>Number traits 1 to 9</li>
+          <li>Manglik & Pitra dosh analysis</li>
+          <li>Mahadasha & Antardasha calculation</li>
+          <li>Lucky / Unlucky numbers</li>
+          <li>Mobile & Name Numerology corrections</li>
+        </ul>
+
+        <div style="margin-top:12px">
+          <span class="badge">Day 1 — Basics & Number Traits</span>
+          <span class="badge">Day 2 — Dosh & Dasha</span>
+          <span class="badge">Day 3 — Name & Remedies</span>
+        </div>
+
+        <div class="actions">
+          <a class="btn blink" href="https://vedic-numerology-g7iq.vercel.app/" target="_blank">Book Now</a>
+          <a id="joinWABtn" class="btn" href="https://chat.whatsapp.com/JyjgJl72hxcDaTGvMe0Ax1" target="_blank">Join WhatsApp Group</a>
         </div>
       </div>
-      <div style="text-align:right">
-        <div style="font-weight:700">Dates: <span style="color:var(--accent)">1, 2, 3 December</span></div>
+
+      <div class="card" style="margin-top:16px">
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+          <div class="item">"Simple & practical explanations — highly recommended!"</div>
+          <div class="item">"Name correction changed my business luck."</div>
+          <div class="item">"Best Mahadasha calculation teaching!"</div>
+        </div>
       </div>
-    </header>
+    </div>
 
-    <section class="hero">
-      <!-- Left: details -->
-      <div>
-        <div class="card">
-          <h1 style="font-size:42px;font-weight:800;letter-spacing:-0.5px">3 DAYS Master Class on Vedic Numerology</h1>
-          <div class="sub">Practical Vedic Numerology — step-by-step, calculation & remedies</div>
+    <aside>
+      <div class="card">
+        <div style="font-size:14px;color:var(--muted)">Watch Preview</div>
 
-          <ul class="learn">
-            <li>1 to 9 number traits</li>
-            <li>8 planes, conjunctions, trines, pitra dosh, manglik dosh analysis</li>
-            <li>Mahadasha & Antardasha calculation</li>
-            <li>Lucky / Unlucky numbers</li>
-            <li>Mobile Numerology</li>
-            <li>Name Numerology & corrections</li>
-          </ul>
+        <iframe width="100%" height="240" src="https://www.youtube.com/embed/fbeljqCwkYU" frameborder="0" allowfullscreen></iframe>
 
-          <div class="date-badges">
-            <div class="badge">Day 1 — Basics & Number Traits</div>
-            <div class="badge">Day 2 — Dosh & Dasha</div>
-            <div class="badge">Day 3 — Name & Remedies</div>
+        <div style="margin-top:12px;font-weight:700">Speakers</div>
+        <div style="display:flex;gap:12px;align-items:flex-start;margin-top:8px">
+          <div style="text-align:center;min-width:100px">
+            <img src="DR.jpeg" width="90" style="border-radius:10px;display:block;margin:0 auto" />
+            <div style="margin-top:8px;font-weight:700">Dr. Santoshh Jakhar</div>
+            <div style="color:var(--muted);font-size:13px">Live teaching, Live case studies & Q/A</div>
           </div>
-
-          <div class="actions">
-            <a class="btn" href="https://vedic-numerology-g7iq.vercel.app/" target="_blank">Secure Your Seat — Pay / Register</a>
-            <a class="btn secondary" href="https://chat.whatsapp.com/JyjgJl72hxcDaTGvMe0Ax1" target="_blank">Join WhatsApp Group</a>
-          </div>
-
-          <div style="margin-top:12px;color:var(--muted)">For direct help: <strong>Mrs. Neitu Choudhary</strong> — <a style="color:var(--accent);text-decoration:none" href="https://wa.me/919354370946">+91 9354370946</a></div>
-
-        </div>
-
-        <div class="card" style="margin-top:14px">
-          <h2 style="margin:0 0 8px">Testimonials</h2>
-          <div class="testimonials">
-            <div class="item">"Excellent explanations — simple & practical. Recommended!" — Asha</div>
-            <div class="item">"Name correction helped my business growth." — Raj</div>
-            <div class="item">"Clear step-by-step Mahadasha calculation demo." — Sunita</div>
+          <div style="text-align:center;min-width:100px">
+            <img src="cc.png" width="90" style="border-radius:10px;display:block;margin:0 auto" />
+            <div style="margin-top:8px;font-weight:700">Mrs. Neitu Choudhary</div>
+            <div style="color:var(--muted);font-size:13px">Live teaching, Live case studies & Q/A</div>
           </div>
         </div>
 
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+          <a class="btn secondary" href="https://vedic-numerology-g7iq.vercel.app/" target="_blank">Join Free</a>
+        </div>
       </div>
+    </aside>
+  </section>
 
-      <!-- Right: media / speakers -->
-      <aside>
-        <div class="card video-wrap">
-          <div style="font-size:14px;color:var(--muted)">Watch Preview</div>
-          <iframe width="100%" height="260" src="https://www.youtube.com/embed/fbeljqCwkYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <footer>
+    <div>© Kasturi Divine</div>
+    <div>Need help? WhatsApp: <a href="https://wa.me/919354370946" style="color:var(--accent)">+91 9354370946</a></div>
+  </footer>
+</div>
 
-          <div style="margin-top:12px;font-weight:700">Speakers</div>
-          <div class="speakers">
-            <div class="speaker">
-              <img src="DR.jpeg" alt="Dr Santoshh Jakhar" />
-            </div>
-            <div class="speaker">
-              <img src="cc.png" alt="Mrs Neitu Choudhary" />
-            </div>
-            <div style="flex:1"> 
-              <div style="font-weight:700">Dr. Santoshh Jakhar & Mrs. Neitu Choudhary</div>
-              <div style="color:var(--muted);font-size:13px">Live teaching, Live case studies & Q/A</div>
-            </div>
-          </div>
-
-          <div style="margin-top:12px;display:flex;gap:8px">
-            <a class="btn" href="https://chat.whatsapp.com/JyjgJl72hxcDaTGvMe0Ax1" target="_blank">Join Group</a>
-            <a class="btn secondary" href="https://vedic-numerology-g7iq.vercel.app/" target="_blank">Pay / Register</a>
-          </div>
-
-        </div>
-      </aside>
-    </section>
-
-    <footer>
-      <div>© Kasturi Divine</div>
-      <div style="text-align:right">Questions? WhatsApp: <a href="https://wa.me/919354370946" style="color:var(--accent)">+91 9354370946</a></div>
-    </footer>
-  </div>
-
+<!-- Combined background script: falling numbers + rotating 1-9 layer -->
 <script>
-// Simple falling numbers animation using canvas
 (function(){
-  const canvas = document.getElementById('numbersRain');
-  if(!canvas) return;
-  const ctx = canvas.getContext('2d');
-  let W, H, drops = [];
-  function resize(){W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; initDrops();}
-  function rand(min,max){return Math.random()*(max-min)+min}
-  function initDrops(){drops = []; const count = Math.floor(W/40); for(let i=0;i<count;i++){drops.push({x:Math.random()*W, y:Math.random()*H, speed:rand(0.6,2.2), size:Math.floor(rand(12,26)), val:Math.floor(rand(1,9))})}}
-  function draw(){ctx.clearRect(0,0,W,H); ctx.globalAlpha=1; for(let i=0;i<drops.length;i++){let d=drops[i]; ctx.font = d.size + 'px system-ui, Arial'; ctx.fillStyle = 'rgba(246,176,45,0.95)'; ctx.fillText(d.val, d.x, d.y); d.y += d.speed + d.size*0.02; d.x += Math.sin(d.y*0.01)*0.6; if(d.y > H + 20){d.y = -20; d.x = Math.random()*W; d.speed = rand(0.6,2.2); d.size = Math.floor(rand(12,26)); d.val = Math.floor(rand(1,9))}} requestAnimationFrame(draw);}  
-  window.addEventListener('resize', resize);
-  resize(); draw();
+  // --- Primary falling numbers canvas (uses existing #numbersRain) ---
+  const rainCanvas = document.getElementById('numbersRain');
+  if(!rainCanvas) return;
+  rainCanvas.style.zIndex = 0;
+  rainCanvas.style.pointerEvents = 'none';
+
+  const rainCtx = rainCanvas.getContext('2d');
+  let RW, RH, rainDrops = [];
+
+  // --- Create an extra canvas for rotating/bigger 1-9 numbers layer ---
+  const spinCanvas = document.createElement('canvas');
+  spinCanvas.id = 'numbersSpin';
+  spinCanvas.style.position = 'fixed';
+  spinCanvas.style.left = '0';
+  spinCanvas.style.top = '0';
+  spinCanvas.style.width = '100%';
+  spinCanvas.style.height = '100%';
+  spinCanvas.style.pointerEvents = 'none';
+  spinCanvas.style.zIndex = 0; // sits behind content (container has z-index:2)
+  spinCanvas.style.opacity = 0.28;
+  document.body.appendChild(spinCanvas);
+
+  const spinCtx = spinCanvas.getContext('2d');
+  let SW, SH, spinNums = [];
+
+  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+
+  function rand(min,max){ return Math.random()*(max-min)+min; }
+
+  // init rain drops
+  function initRain(){
+    rainDrops = [];
+    const count = Math.floor((isMobile ? window.innerWidth/60 : window.innerWidth/40));
+    for(let i=0;i<count;i++){
+      rainDrops.push({
+        x: Math.random()*RW,
+        y: Math.random()*RH,
+        speed: rand(0.6,2.4),
+        size: Math.floor(rand(isMobile?10:14, isMobile?20:28)),
+        val: Math.floor(rand(1,10)) // 1..9
+      });
+    }
+  }
+
+  // init spinning numbers
+  function initSpin(){
+    spinNums = [];
+    const count = isMobile ? 18 : 40;
+    for(let i=0;i<count;i++){
+      spinNums.push({
+        x: rand(0, SW),
+        y: rand(0, SH),
+        s: rand(isMobile?22:28, isMobile?48:64), // size
+        v: rand(isMobile?0.3:0.6, isMobile?1.0:1.8), // vertical speed
+        a: rand(0, Math.PI*2), // angle
+        av: rand(-0.02, 0.02), // angular velocity
+        val: Math.floor(rand(1,10)) // 1..9
+      });
+    }
+  }
+
+  function resizeAll(){
+    // rain
+    RW = rainCanvas.width = window.innerWidth;
+    RH = rainCanvas.height = window.innerHeight;
+    // spin
+    SW = spinCanvas.width = window.innerWidth;
+    SH = spinCanvas.height = window.innerHeight;
+    // re-init arrays for good distribution
+    initRain();
+    initSpin();
+  }
+
+  // draw rain layer (small falling numbers)
+  function drawRain(){
+    rainCtx.clearRect(0,0,RW,RH);
+    rainCtx.globalAlpha = 1;
+    for(let i=0;i<rainDrops.length;i++){
+      const d = rainDrops[i];
+      rainCtx.font = d.size + 'px system-ui, Arial';
+      rainCtx.fillStyle = 'rgba(246,176,45,0.95)';
+      rainCtx.fillText(d.val, d.x, d.y);
+      // motion
+      d.y += d.speed + d.size*0.02;
+      d.x += Math.sin(d.y*0.01)*0.6;
+      if(d.y > RH + 30){
+        d.y = -30;
+        d.x = Math.random()*RW;
+        d.speed = rand(0.6,2.4);
+        d.size = Math.floor(rand(isMobile?10:14, isMobile?20:28));
+        d.val = Math.floor(rand(1,10));
+      }
+    }
+  }
+
+  // draw spinning / rotating big numbers layer (1..9)
+  function drawSpin(){
+    spinCtx.clearRect(0,0,SW,SH);
+    spinCtx.globalAlpha = 0.95;
+    for(let i=0;i<spinNums.length;i++){
+      const n = spinNums[i];
+      spinCtx.save();
+      spinCtx.translate(n.x, n.y);
+      spinCtx.rotate(n.a);
+      spinCtx.font = Math.floor(n.s) + 'px Montserrat, system-ui, Arial';
+      // Slight gradient fill for depth
+      const g = spinCtx.createLinearGradient(-n.s/2, -n.s/2, n.s/2, n.s/2);
+      g.addColorStop(0, 'rgba(255,230,180,0.98)');
+      g.addColorStop(1, 'rgba(246,176,45,0.95)');
+      spinCtx.fillStyle = g;
+      spinCtx.fillText(n.val, 0, 0);
+      spinCtx.restore();
+
+      // motion + rotation
+      n.y += n.v;
+      n.a += n.av;
+      // gentle horizontal sway
+      n.x += Math.sin(n.y*0.007)*0.4;
+
+      if(n.y > SH + 80){
+        n.y = -80;
+        n.x = rand(0, SW);
+        n.s = rand(isMobile?22:28, isMobile?48:64);
+        n.v = rand(isMobile?0.3:0.6, isMobile?1.8:2.4);
+        n.a = rand(0, Math.PI*2);
+        n.val = Math.floor(rand(1,10));
+      }
+    }
+  }
+
+  // master loop
+  function loop(){
+    drawSpin();
+    drawRain();
+    requestAnimationFrame(loop);
+  }
+
+  // resize handler
+  window.addEventListener('resize', function(){
+    clearTimeout(window._numbersResizeTimer);
+    window._numbersResizeTimer = setTimeout(resizeAll, 120);
+  });
+
+  // initial run
+  resizeAll();
+  requestAnimationFrame(loop);
+
+  // Lower resource use when page is hidden
+  document.addEventListener('visibilitychange', function(){
+    if(document.hidden){
+      spinCanvas.style.opacity = 0.12;
+      rainCanvas.style.opacity = 0.6;
+    } else {
+      spinCanvas.style.opacity = 0.28;
+      rainCanvas.style.opacity = 1;
+    }
+  });
+
 })();
 </script>
+
 </body>
 </html>
-
-
-
